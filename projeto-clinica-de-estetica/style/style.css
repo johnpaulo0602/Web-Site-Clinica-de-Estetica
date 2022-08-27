@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Inicio da estilização do navbar */
+.header {
+    background-color: #009FA5;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header nav {
+    display: flex;
+    height: 100px;
+    width: 940px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0 16px;
+}
+
+.logo {
+    width: 160px;
+    height: 50px;
+}
+
+.btn-nav {
+    background-color: #7CCFAE;
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Final da estilização do navbar */
+
+/* Inicio da estilização do carrossel */
+
+.carrossel {
+    margin: 0 auto;
+    width: 1920px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 600px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 1920px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 1920px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 1920px;
+    margin-top: 560px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #fff;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #fff;
+}
+
+/* Final da estilização do carrossel */
+
+/* Inicio da estilização da seção 2 */
+.section2 {
+    display: flex;
+    width: 100%;
+    height: 636px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.section2-title h5 {
+    margin-top: 64px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.14em;
+    color: #00454C;
+}
+
+.section2-title h3 {
+    margin-top: 4px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #00442B;
+}
+
+.section2-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 940px;
+}
+
+.section2-card1 {
+    width: 300px;
+    height: 400px;
+    background: #E7ECF4;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.section2-card2 {
+    width: 300px;
+    height: 400px;
+    background: #E7ECF4;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.section2-card3 {
+    width: 300px;
+    height: 400px;
+    background: #E7ECF4;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.section2-mediaCard1 {
+    background: url("https://clinicalidiagusmao.com.br/wp-content/uploads/2018/11/Peeling-Qu%C3%ADmico.jpg") center/cover;
+    height: 140px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+}
+
+.section2-mediaCard2 {
+    background: url("https://img.freepik.com/fotos-gratis/jovem-mulher-deitada-na-mesa-do-cosmetologista-durante-o-procedimento-de-rejuvenescimento_343596-85.jpg?w=740&t=st=1661112238~exp=1661112838~hmac=209720007c98c510f802b9e426b6328d0c8e5c0501d399f12c19f1ba760d45c1") center/cover;
+    height: 140px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+}
+
+.section2-mediaCard3 {
+    background: url("https://img.freepik.com/fotos-premium/garota-incrivel-lavando-o-rosto-com-espuma-contra-um-fundo-claro_317809-6922.jpg?w=740") center/cover;
+    height: 140px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+}
+
+.section2-contentCard {
+    padding: 0px 20px;
+}
+
+.section2-contentCard h6 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #00442B;
+    padding-top: 20px;
+    padding-bottom: 4px;
+}
+
+.section2-contentCard span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2F3237;
+}
+
+.section2-contentCard h5 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #00442B;
+    padding: 20px 0 26px 0;
+}
+ 
+.section2-cards button {
+    width: 260px;
+    height: 32px;
+    padding: 8px 16px;
+    background: #009FA5;
+    border: 0;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Final da estilização da seção 2 */
+
+/* Inicio da estilização da seção 3 - diferenciais */
+
+.section3 {
+    display: flex;
+    width: 100%;
+    height: 680px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #009FA5;
+}
+
+.section3-title h5 {
+    margin-top: 64px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.14em;
+    color: #FFFFFF;
+}
+
+.section3-title h3 {
+    margin-top: 4px;
+    margin-bottom: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+}
+
+
+.section3-content {
+    display: flex;
+    width: 940px;
+}
+
+.section3-content div iframe{
+    border-radius: 16px;
+    width: 520px;
+    height: 286px;
+    margin-right: 20px;
+}
+
+.section3-content i {
+    font-size: 40px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.section3-content p {
+    margin-bottom: 20px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+
+/* Final da estilização da seção 3 - diferenciais */
+
+/* Inicio da estilização da seção 4 */
+.section4 {
+    display: flex;
+    width: 100%;
+    height: 636px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.section4-title h5 {
+    margin-top: 64px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.14em;
+    color: #00454C;
+}
+
+.section4-title h3 {
+    margin-top: 4px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #00442B;
+}
+
+.section4-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 940px;
+}
+
+.section4-card1 {
+    width: 300px;
+    height: 400px;
+    background: #E7ECF4;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.section4-card2 {
+    width: 300px;
+    height: 400px;
+    background: #E7ECF4;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.section4-card3 {
+    width: 300px;
+    height: 400px;
+    background: #E7ECF4;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+
+.section4-mediaCard1 {
+    background: url("https://storage.googleapis.com/adp-images/blog/Kobido-%20a%20massagem%20facial%20que%20previne%20rugas%20e%20flacidez.png") center/cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+}
+
+.section4-mediaCard2 {
+    background: url("https://storage.googleapis.com/adp-images/blog/capa-blog/Guia%20Pr%C3%A1tico.png") center/cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+}
+
+.section4-mediaCard3 {
+    background: url("https://storage.googleapis.com/adp-images/blog/capa-blog/Acne.png") center/cover;
+    height: 200px;
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+}
+
+.section4-contentCard {
+    padding: 0px 20px;
+}
+
+.section4-contentCard h6 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00442B;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.section4-contentCard span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #2F3237;
+}
+
+.saibaMais a{
+    color: #009FA5;
+    cursor: pointer;
+}
+
+/* Final da estilização da seção 4 */

@@ -466,3 +466,49 @@ body {
 }
 
 /* Final da estilização da seção 4 */
+
+/* Inicio da estilização do footer */
+
+.footer {
+    display: flex;
+    width: 100vw;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #009FA5;
+}
+
+.footerLogo {
+    color: #fff;
+    width: 220px;
+    height: 60px;
+    margin-top: 34px;
+}
+
+.footerList {
+    display: flex;
+    width: 1440px;
+    justify-content: center;
+    margin-top: 32px;
+    list-style: none;
+}
+
+.footerList li:not(:last-child){
+    margin-right: 40px;
+}
+
+.footerList li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+/* Final da estilização do footer */

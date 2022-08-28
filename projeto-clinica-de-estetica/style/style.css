@@ -506,9 +506,38 @@ body {
     color: #FFFFFF;
 }
 
+.footerRedesSociais {
+    display: flex;
+    width: 1440px;
+    justify-content: center;
+    margin-top: 32px;
+    list-style: none;
+}
 
+.footerRedesSociais li:not(:last-child){
+    margin-right: 24px;
+}
 
+.footerRedesSociais li i {
+    text-decoration: none;
+    font-size: 28px;
+    color: #231F20;
+}
 
+.footer hr {
+    width: 940px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    margin-top: 28px;
+}
 
-
+.footer span {
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 20px;
+margin-bottom: 14px;
+}
 /* Final da estilização do footer */

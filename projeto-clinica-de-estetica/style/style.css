@@ -34,25 +34,76 @@ body {
     justify-content: space-between;
 }
 
-.nav-list {
-    display: flex;
-    list-style: none;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 0 16px;
-}
-
+/* Estilização da logo */
 .logo {
     width: 160px;
     height: 50px;
 }
 
+/* Estilização do Menu */
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #009FA5;
+}
+
+.nav-list li {
+    float: left;
+}
+
+.nav-list li a {
+    display: inline-block;
+    padding: 16px 12px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.nav-list li a:hover {
+    color: #00442B;
+}
+
+.dropdown {
+    display: inline-block;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #009FA5;
+    min-width: 160px;
+    border-top: solid #00442B 3px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.nav-list .dropdown-content a {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav-list .dropdown-content a:hover {
+    background-color: #009FA5;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* estilização do botão de whatsapp */
 .btn-nav {
     background-color: #7CCFAE;
     width: 160px;
@@ -109,7 +160,7 @@ body {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 1s;
+    transition: 3s;
 }
 
 .manual-btn:not(:last-child) {

@@ -550,11 +550,15 @@ body {
 
 .footerList li a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 20px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.footerList li a:hover {
+    color: #231F20;
 }
 
 .footerRedesSociais {
@@ -573,6 +577,13 @@ body {
     text-decoration: none;
     font-size: 28px;
     color: #231F20;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.footerRedesSociais li i:hover {
+    color: #fff;
+    font-size: 30px;
 }
 
 .footer hr {

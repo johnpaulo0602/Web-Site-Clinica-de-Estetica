@@ -690,3 +690,14 @@ margin-bottom: 14px;
     border: 0;
     float: left;
 }
+
+.contato-form form .contato-btn:hover {
+    background-color: #FFFFFF;
+    color: #009FA5;
+}
+
+ /* remover butoes do input number */
+ .contato-form form input::-webkit-outer-spin-button, .contato-form form input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+

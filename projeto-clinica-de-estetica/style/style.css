@@ -603,11 +603,12 @@ margin-bottom: 14px;
     line-height: 48px;
     color: #00442B;
 }
-
+ /* estilização do formulario da página de contatos */
 .contato-content {
     display: flex;
+    width: 940px;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .contato-form form {
@@ -701,3 +702,19 @@ margin-bottom: 14px;
     -webkit-appearance: none;
 }
 
+/* estilização do maps da pagina de contatos */
+
+.contato-maps p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00454C;
+    margin-bottom: 32px;
+}
+
+.contato-maps p i {
+    width: 16px;
+    height: 16px;
+    color: #00454C;
+    margin-right: 10px;
+}

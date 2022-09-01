@@ -635,7 +635,7 @@ margin-bottom: 14px;
     border: none;
     border-radius: 8px;
     padding-left: 8px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .contato-form form textarea{

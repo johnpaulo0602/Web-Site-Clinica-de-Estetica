@@ -259,26 +259,19 @@ body {
     width: 940px;
 }
 
-.section2-card1 {
+.section2-card1, .section2-card2, .section2-card3 {
     width: 300px;
     height: 400px;
     background: #E7ECF4;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
+    transition:.5s; 
+    cursor: pointer;
 }
-.section2-card2 {
-    width: 300px;
-    height: 400px;
-    background: #E7ECF4;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
-}
-.section2-card3 {
-    width: 300px;
-    height: 400px;
-    background: #E7ECF4;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
+
+.section2-card1:hover, .section2-card2:hover, .section2-card3:hover {
+    transform: translateY(-10px); 
+	box-shadow: 0 6px 8px rgba(0,0,0,0.5); 
 }
 
 .section2-mediaCard1 {

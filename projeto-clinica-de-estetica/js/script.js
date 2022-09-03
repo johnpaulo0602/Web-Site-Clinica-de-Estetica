@@ -36,18 +36,24 @@ document.querySelector('#btnCadastro')
     .addEventListener('click', () => {
         formEntrar.style.left = "460px"
         formCadastro.style.left = "25px"
-        btnColor.style.left = "164px"
-})
-
-document.querySelector('#showCadastro').addEventListener('click', 
-function (){
-    document.querySelector('.cadastroContainer').classList.add('active');
+        btnColor.style.left = "165px"
 })
 
 
+const showCadastro = document.querySelector("#showCadastro")
+const cadastroEmbrulho = document.querySelector('.cadastroEmbrulho')
 
 
+showCadastro.addEventListener('click', () => {
+    cadastroEmbrulho.style.display = 'block'
+})
 
+cadastroEmbrulho.addEventListener('click', event => {
+    const classNameOfClickedElement = event.target.classList[0]
+
+if (classNameOfClickedElement === 'fa-solid' || classNameOfClickedElement === 'cadastroEmbrulho') {
+    cadastroEmbrulho.style.display = 'none'}
+})
 
 
 

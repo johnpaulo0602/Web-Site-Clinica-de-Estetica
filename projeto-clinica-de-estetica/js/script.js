@@ -1,5 +1,5 @@
+// Inicio Carrossel
 
-// Variavel
 let count = 1;
 document.getElementById("radio1").checked = true;
 
@@ -17,3 +17,36 @@ function nextimage(){
     document.getElementById("radio"+count).checked = true;
 }
 
+// Final carrossel
+
+// Inicio Login
+
+let formEntrar = document.querySelector('#formEntrar')
+let formCadastro = document.querySelector('#formCadastro')
+let btnColor = document.querySelector('.btnColor')
+
+document.querySelector('#btnEntrar')
+    .addEventListener('click', () => {
+        formEntrar.style.left = "25px"
+        formCadastro.style.left = "460px"
+        btnColor.style.left = "0px"
+})
+
+document.querySelector('#btnCadastro')
+    .addEventListener('click', () => {
+        formEntrar.style.left = "460px"
+        formCadastro.style.left = "25px"
+        btnColor.style.left = "140px"
+})
+
+
+
+
+
+
+
+
+
+
+
+// Final Login

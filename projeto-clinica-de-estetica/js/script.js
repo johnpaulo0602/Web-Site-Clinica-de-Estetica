@@ -36,9 +36,13 @@ document.querySelector('#btnCadastro')
     .addEventListener('click', () => {
         formEntrar.style.left = "460px"
         formCadastro.style.left = "25px"
-        btnColor.style.left = "140px"
+        btnColor.style.left = "164px"
 })
 
+document.querySelector('#showCadastro').addEventListener('click', 
+function (){
+    document.querySelector('.cadastroContainer').classList.add('active');
+})
 
 
 

@@ -60,12 +60,51 @@
             </ul>
 
             <!-- botão whatsapp -->
-            <button class="btn-nav">Cadastro</button>
+            <button class="btn-nav" id="showCadastro">Cadastro</button>
         </nav>
         </div>
     </header>
     <main>
+<!-- cadastro -->
+
+        <div class="cadastroEmbrulho">
+            <div class="cadastroContainer">
+                <div class="buttonsForm">
+                    <div class="btnColor"></div>
+                    <button id="btnEntrar">Entrar</button>
+                    <button id="btnCadastro">Cadastre-se</button>
+                </div>
+        
+                <form id="formEntrar">
+                    <input type="text"placeholder="Email" required />
+                    <i class="fas fa-envelope iEmail"></i>
+                    <input type="password"placeholder="Senha" required />
+                    <i class="fas fa-lock iPassword"></i>
+                    <div class="divCheck">
+                        <input type="checkbox" />
+                        <span>Lembrar-me</span>
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+        
+                <form id="formCadastro">
+                    <input type="text"placeholder="Email" required />
+                    <i class="fas fa-envelope iEmail"></i>
+                    <input type="password"placeholder="Senha" required />
+                    <i class="fas fa-lock iPassword"></i>
+                    <input type="password"placeholder="Confirma a senha" required />
+                    <i class="fas fa-lock iPassword2"></i>
+                    <div class="divCheck">
+                        <input type="checkbox" required />
+                        <span>Aceito os termos</span>
+                    </div>
+                    <button type="submit">Cadastrar-se</button>
+                </form>
+            </div>
+        </div>
+
         <!-- Seção com carrossel e banners -->
+       
         <section>
             <div class="carrossel">
                 <div class="slides">

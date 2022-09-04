@@ -880,3 +880,172 @@ margin-bottom: 14px;
     color: #00454C;
     margin-right: 10px;
 }
+
+
+/* estilização do agendamento */
+
+.agForm {
+    width: 500px;
+    /* height: 600px; */
+    background: #009FA5;
+    box-shadow: 0px 8px 24px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    padding: 32px 20px 40px 20px;
+}
+
+/* Barra de progresso */
+.progressbar {
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.progress {
+    position: absolute;
+    top: 50%;
+    height: 4px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.progress-ball {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #00454C;
+    z-index: 1;
+}
+
+.progress-ball::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 50px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.progress-ball-active{
+    background-color: #00454C;
+    color: #fff;
+}
+
+/* form de agendamento */
+.form-group {
+    margin: 56px 0 44px 0;
+    display: block;
+}
+
+.form-group  label {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.form-group input, select {
+    width: 100%;
+    height: 44px;
+    border-radius: 32px;
+    padding: 8px 16px;
+    border: 0;
+    outline: 0;
+    margin: 12px 0 28px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00454C;
+    appearance: none;
+}
+
+.btn {
+    height: 44px;
+    padding: 8px 16px;
+    background: #00454C;
+    border-radius: 32px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-agendar {
+    width: 100%;
+    margin-top: 32px;
+}
+
+/* Confirmação */
+
+.confirm-group {
+    margin: 56px 0 44px 0;
+    height: 424px;
+    display: none;
+}
+
+.confirm-group h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.confirm-group h5 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding-bottom: 8px;
+}
+
+.group-btn {
+    margin-top: 104px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-back {
+    width: 220px;
+}
+
+.btn-next {
+    width: 220px;
+    background-color: #FFFFFF;
+    color: #00454C;
+}
+
+/* Finalização */
+
+.final-group {
+    display: none;
+    margin: 56px 0 44px 0;
+    height: 424px;
+    text-align: center;
+}
+
+.final-group i {
+    font-size: 180px;
+    color: #B0FFE2;
+}
+
+.final-group h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+

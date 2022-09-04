@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="John Paulo da Silva Paiva" />
+    <title>Beauty - Clínica de Estética</title>
+    <link rel="stylesheet" href="style/style.css" media="all" />
+    <script src="https://kit.fontawesome.com/67d1d8b60a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <form class="agForm">
+        <!-- Barra de progresso -->
+            <div class="progressbar">
+                <div class="progress" id="progress"></div>
+                
+                <div class="progress-ball progress-ball-active" data-title="Agenda"
+                >1</div>
+                <div class="progress-ball" data-title="Confirmação">2</div>
+                <div class="progress-ball" data-title="Fim">3</div>
+            </div>
+            
+        <!-- Passos do agendamento -->
+
+            <div class="form-group">
+                <label class="agLabel">O que você gostaria de agendar?</label>
+                <select id="listProcedimentos">
+                    <option value=""></option>
+                    <option value="Peeling">Peeling</option>
+                    <option value="Botox">Botox</option>
+                    <option value="Harmonização facial">Harmonização facial</option>
+                </select>
+                <label class="agLabel">Escolha o dia:</label>
+                <input type="date" />
+                <label class="agLabel">Escolha a hora:</label>
+                <input type="time" />
+                <button class="btn btn-agendar">Agendar</button>
+            </div>
+
+            <div class="confirm-group">
+                <h3>Revise seu agendamento</h3>
+                <h5>Procedimento: <span>depilação a laser</span></h5>
+                <h5>Dia: <span>14 de setembro de 2022</span></h5>
+                <h5>Hora: <span>Hora: 14h30</span>></h5>
+                <div class="group-btn">
+                    <button class="btn btn-back">Voltar</button>
+                    <button class="btn btn-next">Confirmar</button>
+                </div>
+            </div>
+
+            <div class="final-group">
+                <i class="fa-regular fa-circle-check"></i>
+                <h3>Agendamento feito com sucesso!</h3>
+                <div class="group-btn">
+                    <button class="btn btn-back">Voltar</button>
+                    <button class="btn btn-next">Confirmar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -10,16 +10,71 @@
     <script src="https://kit.fontawesome.com/67d1d8b60a.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <div class="header">
+        <!-- navbar -->
+        <nav>
+            <!-- logo -->
+            <a href="#">
+                <img src="img/logo-beauty.svg" class="logo" >
+            </a>
+
+            <!-- links menu -->
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Face</a>
+                    <div class="dropdown-content">
+                        <a href="#">Harmonização facial</a>
+                        <a href="#">Limpeza de pele</a>
+                        <a href="#">Peeling</a>
+                        <a href="#">Botox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Corpo</a>
+                    <div class="dropdown-content">
+                        <a href="#">Massagem modeladora</a>
+                        <a href="#">Depilação a laser</a>
+                        <a href="#">Drenagem linfática</a>
+                        <a href="#">Peeling corporal</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Cabelo</a>
+                    <div class="dropdown-content">
+                        <a href="#">Microagulhamento Capilar</a>
+                        <a href="#">Led Capilar</a>
+                        <a href="#">Botox capilar</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Pés</a>
+                    <div class="dropdown-content">
+                        <a href="#">Unha encravada</a>
+                        <a href="#">Remoção de calosidades</a>
+                        <a href="#">Massagem relaxante</a>
+                    </div>
+                </li>
+                <li><a href="#">Nutrição</a></li>
+            </ul>
+
+            <!-- botão whatsapp -->
+            <button class="btn-nav" id="showCadastro">Cadastro</button>
+        </nav>
+        </div>
+    </header>
     <main>
-        <form class="agForm">
+        <form class="agForm" onsubmit="return false;">
         <!-- Barra de progresso -->
             <div class="progressbar">
+                <div class="progress"  ></div>
                 <div class="progress" id="progress"></div>
                 
-                <div class="progress-ball progress-ball-active" data-title="Agenda"
+                <div class="progress-ball progress-ball-active" id="progressBall1" data-title="Agenda"
                 >1</div>
-                <div class="progress-ball" data-title="Confirmação">2</div>
-                <div class="progress-ball" data-title="Fim">3</div>
+                <div class="progress-ball" id="progressBall2" data-title="Confirmação">2</div>
+                <div class="progress-ball" id="progressBall3" data-title="Fim">3</div>
             </div>
             
         <!-- Passos do agendamento -->
@@ -32,11 +87,11 @@
                     <option value="Botox">Botox</option>
                     <option value="Harmonização facial">Harmonização facial</option>
                 </select>
-                <label class="agLabel">Escolha o dia:</label>
+                <label class="agLabel" id="dataAgendamento">Escolha o dia:</label>
                 <input type="date" />
-                <label class="agLabel">Escolha a hora:</label>
+                <label class="agLabel" id="horaAgendamento">Escolha a hora:</label>
                 <input type="time" />
-                <button class="btn btn-agendar">Agendar</button>
+                <button onsubmit ="return false" class="btn btn-agendar" id="btnAgendar">Agendar</button>
             </div>
 
             <div class="confirm-group">
@@ -45,8 +100,8 @@
                 <h5>Dia: <span>14 de setembro de 2022</span></h5>
                 <h5>Hora: <span>Hora: 14h30</span>></h5>
                 <div class="group-btn">
-                    <button class="btn btn-back">Voltar</button>
-                    <button class="btn btn-next">Confirmar</button>
+                    <button class="btn btn-back" id="btnBack1">Voltar</button>
+                    <button class="btn btn-next" id="btnNext">Confirmar</button>
                 </div>
             </div>
 
@@ -54,11 +109,64 @@
                 <i class="fa-regular fa-circle-check"></i>
                 <h3>Agendamento feito com sucesso!</h3>
                 <div class="group-btn">
-                    <button class="btn btn-back">Voltar</button>
+                    <button class="btn btn-back" id="btnBack2">Voltar</button>
                     <button class="btn btn-next">Confirmar</button>
                 </div>
             </div>
         </form>
     </main>
+    <footer>
+        <div class="footer">
+            <!-- logo -->
+            <a href="#">
+                <img src="img/logo-beauty.svg" class="footerLogo" >
+            </a>
+            <!-- links footer -->
+            <ul class="footerList">
+                <li><a href="#">Quem Somos</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+            <ul class="footerRedesSociais">
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-whatsapp"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+            <hr />
+            <span>Copyright © 2022 BEAUTY</span>
+        </div>
+    </footer>
+    <script>
+    const btnAgendar = document.querySelector('#btnAgendar');
+    const btnNext = document.querySelector('#btn-next');
+    const btnBack1 = document.querySelector('#btnBack1');
+    const btnBack2 = document.querySelector('#btnBack2');
+    const formGroup = document.querySelector('.form-group');
+    const confirmGroup = document.querySelector('.confirm-group');
+    const finalGroup = document.querySelector('.final-group');
+    const progressBall1 = document.querySelector('#progressBall1');
+    const progressBall2 = document.querySelector('#progressBall2');
+    const progressBall3 = document.querySelector('#progressBall3');
+    const progressBar = document.querySelector('#progress');
+    const procedimento = document.querySelector('#listProcedimentos');
+    const dataAgendamento = document.querySelector('#dataAgendamento');
+    const horaAgendamento = document.querySelector('#horaAgendamento');
+
+
+    btnAgendar.addEventListener('click', () => {
+        confirmGroup.style.display = 'block';
+        formGroup.style.display = 'none';
+        progressBall2.classList.add('progress-ball-active')
+        progressBar.classList.add('progress-bar-active')
+        progressBar.style.width = ('50%')
+        
+    })
+    
+    </script>
 </body>
 </html>

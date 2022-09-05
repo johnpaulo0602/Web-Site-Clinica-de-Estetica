@@ -70,7 +70,7 @@
             <div class="progressbar">
                 <div class="progress"  ></div>
                 <div class="progress" id="progress"></div>
-                
+    
                 <div class="progress-ball progress-ball-active" id="progressBall1" data-title="Agenda"
                 >1</div>
                 <div class="progress-ball" id="progressBall2" data-title="Confirmação">2</div>
@@ -81,16 +81,16 @@
 
             <div class="form-group">
                 <label class="agLabel">O que você gostaria de agendar?</label>
-                <select id="listProcedimentos" >
+                <select id="listProcedimentos" required>
                     <option value=""></option>
                     <option value="Peeling">Peeling</option>
                     <option value="Botox">Botox</option>
                     <option value="Harmonização facial">Harmonização facial</option>
                 </select>
                 <label class="agLabel">Escolha o dia:</label>
-                <input type="date" id="dataAgendamento" />
+                <input type="date" id="dataAgendamento" required/>
                 <label class="agLabel">Escolha a hora:</label>
-                <input type="time" id="horaAgendamento" />
+                <input type="time" id="horaAgendamento" required/>
                 <button class="btn btn-agendar" id="btnAgendar" onclick="confirm1 ()">Agendar</button>
             </div>
 

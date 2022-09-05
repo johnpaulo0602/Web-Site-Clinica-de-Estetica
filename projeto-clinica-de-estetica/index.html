@@ -80,29 +80,29 @@
                 </div>
         
                 <form id="formEntrar">
-                    <input type="text"placeholder="Email" required />
+                    <input type="text"placeholder="Email" id="loginEmail" required />
                     <i class="fas fa-envelope iEmail"></i>
-                    <input type="password"placeholder="Senha" required />
+                    <input type="password" placeholder="Senha" id="loginPassword" required />
                     <i class="fas fa-lock iPassword"></i>
                     <div class="divCheck">
                         <input type="checkbox" />
                         <span>Lembrar-me</span>
                     </div>
-                    <button type="submit">Entrar</button>
+                    <button type="submit" id="btnLogin" onclick="loginsuccess();">Entrar</button>
                 </form>
         
                 <form id="formCadastro">
-                    <input type="text"placeholder="Email" required />
+                    <input type="text" placeholder="Email" id="registerEmail" required />
                     <i class="fas fa-envelope iEmail"></i>
-                    <input type="password"placeholder="Senha" required />
+                    <input type="password" placeholder="Senha" id="registerPassword"  required />
                     <i class="fas fa-lock iPassword"></i>
-                    <input type="password"placeholder="Confirma a senha" required />
+                    <input type="password" placeholder="Confirma a senha" id="registerPassword2" required />
                     <i class="fas fa-lock iPassword2"></i>
                     <div class="divCheck">
                         <input type="checkbox" required />
                         <span>Aceito os termos</span>
                     </div>
-                    <button type="submit">Cadastrar-se</button>
+                    <button type="submit" id="btnRegister" onclick="registersuccess();">Cadastrar-se</button>
                 </form>
             </div>
         </div>

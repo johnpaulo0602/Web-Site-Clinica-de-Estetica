@@ -142,6 +142,8 @@
     </footer>
 
     <script>
+
+        // declaração de variaveis
     const btnAgendar = document.querySelector('#btnAgendar');
     const btnNext = document.querySelector('#btn-next');
     const btnBack1 = document.querySelector('#btnBack1');
@@ -154,8 +156,10 @@
     const progressBall3 = document.querySelector('#progressBall3');
     const progressBar = document.querySelector('#progress');
 
+    // mudar para a confirmação adicionando os valores que o usuario escolheu no input
     function confirm1 () {
         const listProcedimentos = document.querySelector('#listProcedimentos').value;
+        // alterar formato da data capturada pelo navegador
         const dataAgendamento = document.querySelector('#dataAgendamento').value.split('-').reverse().join('/');
         const horaAgendamento = document.querySelector('#horaAgendamento').value;
         const procedimentoConfirm = document.querySelector('#procedimentoConfirm');
@@ -172,6 +176,7 @@
         horaConfirm.innerHTML = 'Hora: ' + horaAgendamento;
     }
 
+    // mudar para a finalização
     function confirm2 () {
         confirmGroup.style.display = 'none';
         formGroup.style.display = 'none';
@@ -181,6 +186,7 @@
         progressBar.style.width = ('100%');
     }
 
+    // voltar para escolha de procedimento data hora
     function back1 () {
         formGroup.style.display = 'block';
         confirmGroup.style.display = 'none';
@@ -190,6 +196,7 @@
         progressBar.style.width = ('0%');
     }
 
+    // voltar para realizar um novo agendamento apagando os valores de todos os inputs
     function back2 () {
         document.querySelector('#listProcedimentos').value = '';
         document.querySelector('#dataAgendamento').value = '';

@@ -56,7 +56,4 @@ if (classNameOfClickedElement === 'fa-solid' || classNameOfClickedElement === 'c
 })
 
 
-
-
-
 // Final Login

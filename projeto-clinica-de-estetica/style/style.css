@@ -544,17 +544,16 @@ body {
     border-radius: 16px;
     width: 520px;
     height: 286px;
-    margin-right: 20px;
+    margin-right: 16px;
 }
 
 .section3-content i {
     font-size: 40px;
     color: #fff;
-    margin-right: 20px;
+    margin-right: 8px;
 }
 
 .section3-content p {
-    margin-bottom: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -563,7 +562,15 @@ body {
     color: #FFFFFF;
 }
 
+.section3-check {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
 
+.section3-check:not(last-child) {
+    margin-bottom: 20px;
+}
 
 /* Final da estilização da seção 3 - diferenciais */
 

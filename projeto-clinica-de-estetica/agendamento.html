@@ -81,27 +81,27 @@
 
             <div class="form-group">
                 <label class="agLabel">O que você gostaria de agendar?</label>
-                <select id="listProcedimentos">
+                <select id="listProcedimentos" >
                     <option value=""></option>
                     <option value="Peeling">Peeling</option>
                     <option value="Botox">Botox</option>
                     <option value="Harmonização facial">Harmonização facial</option>
                 </select>
-                <label class="agLabel" id="dataAgendamento">Escolha o dia:</label>
-                <input type="date" />
-                <label class="agLabel" id="horaAgendamento">Escolha a hora:</label>
-                <input type="time" />
-                <button onsubmit ="return false" class="btn btn-agendar" id="btnAgendar">Agendar</button>
+                <label class="agLabel">Escolha o dia:</label>
+                <input type="date" id="dataAgendamento" />
+                <label class="agLabel">Escolha a hora:</label>
+                <input type="time" id="horaAgendamento" />
+                <button class="btn btn-agendar" id="btnAgendar" onclick="confirm1 ()">Agendar</button>
             </div>
 
             <div class="confirm-group">
                 <h3>Revise seu agendamento</h3>
-                <h5>Procedimento: <span>depilação a laser</span></h5>
-                <h5>Dia: <span>14 de setembro de 2022</span></h5>
-                <h5>Hora: <span>Hora: 14h30</span>></h5>
+                <h5 id="procedimentoConfirm"></h5>
+                <h5 id="diaConfirm"></h5>
+                <h5 id="horaConfirm"></h5>
                 <div class="group-btn">
-                    <button class="btn btn-back" id="btnBack1">Voltar</button>
-                    <button class="btn btn-next" id="btnNext">Confirmar</button>
+                    <button class="btn btn-back" id="btnBack1" onclick="back1 ()">Voltar</button>
+                    <button class="btn btn-next" id="btnNext" onclick="confirm2 ()">Confirmar</button>
                 </div>
             </div>
 
@@ -109,8 +109,8 @@
                 <i class="fa-regular fa-circle-check"></i>
                 <h3>Agendamento feito com sucesso!</h3>
                 <div class="group-btn">
-                    <button class="btn btn-back" id="btnBack2">Voltar</button>
-                    <button class="btn btn-next">Confirmar</button>
+                    <button class="btn btn-back" id="btnBack2" onclick="back2 ()">Novo agendamento</button>
+                    <button class="btn btn-next">Meus agendamentos</button>
                 </div>
             </div>
         </form>
@@ -153,20 +153,58 @@
     const progressBall2 = document.querySelector('#progressBall2');
     const progressBall3 = document.querySelector('#progressBall3');
     const progressBar = document.querySelector('#progress');
-    const procedimento = document.querySelector('#listProcedimentos');
-    const dataAgendamento = document.querySelector('#dataAgendamento');
-    const horaAgendamento = document.querySelector('#horaAgendamento');
 
+    function confirm1 () {
+        const listProcedimentos = document.querySelector('#listProcedimentos').value;
+        const dataAgendamento = document.querySelector('#dataAgendamento').value;
+        const horaAgendamento = document.querySelector('#horaAgendamento').value;
 
-    btnAgendar.addEventListener('click', () => {
+        const procedimentoConfirm = document.querySelector('#procedimentoConfirm');
+        const diaConfirm = document.querySelector('#diaConfirm');
+        const horaConfirm = document.querySelector('#horaConfirm');
+
         confirmGroup.style.display = 'block';
         formGroup.style.display = 'none';
-        progressBall2.classList.add('progress-ball-active')
-        progressBar.classList.add('progress-bar-active')
-        progressBar.style.width = ('50%')
-        
-    })
-    
+        progressBall2.classList.add('progress-ball-active');
+        progressBar.classList.add('progress-bar-active');
+        progressBar.style.width = ('50%');
+        procedimentoConfirm.innerHTML = 'Procedimento: ' + listProcedimentos;
+        diaConfirm.innerHTML = 'Data: ' + dataAgendamento;
+        horaConfirm.innerHTML = 'Hora: ' + horaAgendamento;
+    }
+
+    function confirm2 () {
+        confirmGroup.style.display = 'none';
+        formGroup.style.display = 'none';
+        finalGroup.style.display = 'block';
+        progressBall3.classList.add('progress-ball-active');
+        progressBar.classList.add('progress-bar-active');
+        progressBar.style.width = ('100%');
+    }
+
+    function back1 () {
+        formGroup.style.display = 'block';
+        confirmGroup.style.display = 'none';
+        finalGroup.style.display = 'none';
+        progressBall3.classList.add('progress-ball-active');
+        progressBar.classList.add('progress-bar-active');
+        progressBar.style.width = ('0%');
+    }
+
+    function back2 () {
+        document.querySelector('#listProcedimentos').value = '';
+        document.querySelector('#dataAgendamento').value = '';
+        document.querySelector('#horaAgendamento').value = '';
+
+        formGroup.style.display = 'block';
+        confirmGroup.style.display = 'none';
+        finalGroup.style.display = 'none';
+        progressBall3.classList.add('progress-ball-active');
+        progressBar.classList.add('progress-bar-active');
+        progressBar.style.width = ('0%');
+    }
+
+
     </script>
 </body>
 </html>

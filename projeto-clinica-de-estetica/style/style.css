@@ -1074,3 +1074,72 @@ margin-bottom: 14px;
     text-align: center;
     color: #FFFFFF;
 }
+
+/* estilização politica de privacidade */
+
+.politicaprivacidade {
+    width: 940px;
+    margin: 48px 0;
+    padding: 24px 40px;
+    text-align: justify;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.politicaprivacidade h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #00454C;
+    margin: 16px 0;
+}
+
+.politicaprivacidade h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 48px;
+    color: #00454C;
+    margin: 24px 0;
+}
+
+.politicaprivacidade ul {
+    margin-left: 16px;
+}
+
+/* estilização quem somos */
+
+.quemsomos {
+    width: 940px;
+    height: 600px;
+    margin: 48px 0;
+    padding: 24px 40px;
+    text-align: justify;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.quemsomos h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #00454C;
+    margin: 16px 0 40px 0;
+}
+
+.quemsomos p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    color: #00454C;
+    margin: 32px 0;
+}

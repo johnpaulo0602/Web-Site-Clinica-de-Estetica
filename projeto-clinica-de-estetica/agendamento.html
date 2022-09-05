@@ -156,9 +156,8 @@
 
     function confirm1 () {
         const listProcedimentos = document.querySelector('#listProcedimentos').value;
-        const dataAgendamento = document.querySelector('#dataAgendamento').value;
+        const dataAgendamento = document.querySelector('#dataAgendamento').value.split('-').reverse().join('/');
         const horaAgendamento = document.querySelector('#horaAgendamento').value;
-
         const procedimentoConfirm = document.querySelector('#procedimentoConfirm');
         const diaConfirm = document.querySelector('#diaConfirm');
         const horaConfirm = document.querySelector('#horaConfirm');

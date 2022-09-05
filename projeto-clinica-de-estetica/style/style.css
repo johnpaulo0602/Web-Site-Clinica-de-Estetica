@@ -116,6 +116,11 @@ body {
     font-size: 14px;
     color: #fff;
     cursor: pointer;
+    transition: .2s;
+}
+
+.btn-nav:hover{
+    background-color: #00454C;
 }
 
 /* Final da estilização do navbar */
@@ -421,7 +426,6 @@ body {
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
     border-radius: 16px;
     transition:.5s; 
-    cursor: pointer;
 }
 
 .section2-card1:hover, .section2-card2:hover, .section2-card3:hover {
@@ -489,8 +493,12 @@ body {
     font-size: 14px;
     color: #FFFFFF;
     cursor: pointer;
+    transition: .2s;
 }
 
+.section2-cards button:hover{
+    background-color: #00454C;
+}
 /* Final da estilização da seção 2 */
 
 /* Inicio da estilização da seção 3 - diferenciais */
